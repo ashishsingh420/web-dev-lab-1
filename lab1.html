@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY PORTFOLIO</title>
+</head>
+
+<body>
+    <header>
+        <h1>WELCOME TO MY PORTFOLIO</h1>
+        <ul>
+            <li><a href="#about">About me</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#Skills">Skills</a></li>
+            <li><a href="#Contacts">Contacts</a></li>
+        </ul>
+    </header>
+
+    <main id="main-content">
+        <section>
+            <h2>Hello I am Ashish Singh</h2>
+            <p>I am a web development student. This is my personal portfolio website.</p>
+        </section>
+
+        <!-- FIXED ID -->
+        <section id="about">
+            <h3>About me</h3>
+            <img src="image.jpg" alt="my_photo" width="300">
+            <p>I am passionate about learning web development and building creative projects.</p>
+        </section>
+
+        <section id="projects">
+            <h3>Projects</h3>
+            <ul>
+                <li><b>Portfolio Website:</b> A personal one page website to showcase your bio, skill, and contact details.</li>
+                <li><b>Medium Clone:</b> A simple blog layout that looks like medium, built only with HTML and CSS.</li>
+                <li><b>Birthday Card:</b> A creative greeting card webpage designed with HTML structure and CSS styling</li>
+                <li><b>User Form:</b> A form webpage with fields like name, email, message for practicing for handling.</li>
+            </ul>
+        </section>
+
+        <section id="Skills">
+            <h3>Skills</h3>
+            <table border="2" cellpadding="10">
+                <thead>
+                    <tr>
+                        <th>Skill</th>
+                        <th>Level</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>HTML</td>
+                        <td>Beginner</td>
+                    </tr>
+                    <tr>
+                        <td>CSS</td>
+                        <td>Beginner</td>
+                    </tr>
+                    <tr>
+                        <td>JavaScript</td>
+                        <td>Learner</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="Contacts">
+            <h3>Contacts</h3>
+
+            <form>
+                <label for="name">Name :</label>
+                <input type="text" id="name" placeholder="enter your name" required>
+                <br><br>
+
+                <label for="email">Email :</label>
+                <!-- FIXED TYPE -->
+                <input type="email" id="email" placeholder="enter your email" required>
+                <br><br>
+
+                <label for="gender">Gender :</label>
+                <br>
+                <!-- FIXED RADIO BUTTONS -->
+                <label for="male">Male</label>
+                <input type="radio" id="male" name="gender" value="male" required>
+
+                <label for="female">Female</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <br><br>
+
+                <label for="message">Message:</label>
+                <br>
+                <textarea id="message" name="message" required maxlength="800" rows="6"
+                    placeholder="Write your message here..."></textarea>
+                <br><br>
+
+                <button type="submit">SUBMIT</button>
+            </form>
+        </section>
+
+    </main>
+</body>
+
+</html>
